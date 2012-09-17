@@ -1,6 +1,6 @@
 
 
--- Here begins our Ultra-Basic Agda Tutorial
+-- Basic Types in Agda
 -- Source is available at https://github.com/sordina/PerthFP-Agda-Presentation
 
 

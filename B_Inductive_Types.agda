@@ -41,3 +41,40 @@ naught' = 0
 
 one' : ℕ
 one' = 1
+
+
+-- There are modules available in the Agda standard library to encompass many tasks.
+-- We will leave them be for the remainder of this tutorial.
+
+
+-- One final inductive data-type will be defined in this module - The List!
+
+data List (A : Set) : Set where
+  ε   : List A
+  _►_ : A → List A → List A
+
+-- Note, we take full advantage of unicode and mixfix notation here.
+-- Now some functions:
+
+-- Try and fail to define head:
+-- head : List A → A
+-- 
+
+tail : {A : Set} → List A → List A
+tail ε        = ε
+tail (y ► y') = y' -- '\t7' -- Remember: 'C-u C-x =' for hints on a character.
+
+map : {A B : Set} → (A → B) → List A → List B
+map f ε = ε
+map f (y ► y') = f y ►  map f y'
+
+_++_ : {A : Set} → List A → List A → List A
+ε ++ r        = ε
+(y ► y') ++ r = y ►  (y' ++ r)
+
+singleton : {A : Set} → A → List A
+singleton x = x ►  ε
+
+reverse : {A : Set} → List A → List A
+reverse ε = ε
+reverse (y ► y') = reverse y' ++ singleton y

@@ -28,6 +28,8 @@ Some of the best that I have come across so far are:
 * Proofs and Types - Jean-Yves Girard
 * Programming in Martin-L ̈of’s Type Theory - An Introduction - Bengt Nordstr ̈om, Kent Petersson, Jan M. Smith
 
+Some of these papers are related to natural-deduction and dependent-types in general, but are still useful.
+
 ## Instructions for Installing Agda
 
 * Install Haskell
