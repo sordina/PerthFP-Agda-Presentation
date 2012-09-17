@@ -1,7 +1,7 @@
 PerthFP-Agda-Presentation
 =========================
 
-Source for my Agda Presentation to the Perth Functional Programmers Group
+Source for my Agda Presentation to the <a href="http://www.meetup.com/PerthFP/">Perth Functional Programmers Group</a>
 
 ## Instructions for Installing Agda
 
