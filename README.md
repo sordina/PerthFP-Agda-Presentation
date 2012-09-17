@@ -2,3 +2,82 @@ PerthFP-Agda-Presentation
 =========================
 
 Source for my Agda Presentation to the Perth Functional Programmers Group
+
+## Instructions for Installing Agda
+
+* Install Haskell
+* Install Agda
+* Install Emacs
+* Download the Agda Standard Library
+* Download Haskell-Mode
+* Configure Emacs
+* Test configuration
+
+### Install Haskell
+
+Grab the latest Haskell-Platform from http://www.haskell.org/platform/
+
+Check that your install is working:
+
+        ghc   --version
+        cabal --version
+
+### Install Agda
+
+        cabal --update
+        cabal install agda agda-executable
+
+### Install Emacs
+
+Use your package-manager, or download from http://www.gnu.org/software/emacs/
+
+There may be issues if you use Emacs \>= 24.
+
+        apt-get install emacs
+
+
+### Download the Agda Standard Library
+
+Get version 0.6 from http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Libraries.StandardLibrary
+
+Unpack this somewhere stable and note the location of the 'src' folder.
+
+### Download Haskell-Mode
+
+Grab the latest haskell-mode from Github at https://github.com/haskell/haskell-mode
+
+Unpack this somewhere stabe and note the location of the 'haskell-site-file' file.
+
+### Configure Emacs
+
+Ensure that your ~/.emacs contains the following lines (adjust if you know what you're doing):
+
+        (prefer-coding-system       'utf-8)
+        (set-default-coding-systems 'utf-8)
+        (set-terminal-coding-system 'utf-8)
+        (set-keyboard-coding-system 'utf-8)
+
+        (load "~/Library/haskell-mode/haskell-site-file")
+
+        (custom-set-variables '(agda2-include-dirs (quote ("." "/Users/lyndon/Library/Agda/lib/src"))))
+
+        (load-file (let ((coding-system-for-read 'utf-8))
+                        (shell-command-to-string "agda-mode locate")))
+
+### Test Configuration
+
+Run:
+
+        emacs test.agda
+
+This should load test.agda in emacs without ant errors.
+
+Enter the following code:
+
+        module test where
+
+Hit `C-c C-l`
+
+If the file now has syntax-highlighting, then your setup is working!
+
+If not... Sorry :(
