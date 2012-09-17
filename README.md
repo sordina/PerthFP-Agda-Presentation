@@ -14,6 +14,20 @@ attempting to do anything serious with Agda. A good resource for getting a
 feeling for Haskell is <a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a>
 which can be read online for free.
 
+There are many resources available online for leaning Agda, unfortunately they are
+often extremely academic and found in the form of research-papers and workshop documents.
+Some of the best that I have come across so far are:
+
+* Dependently Typed Programming in Agda - Ulf Norell - Chalmers University, Gothenburg
+* A Brief Overview of Agda – A Functional Language with Dependent Types -
+  Ana Bove, Peter Dybjer, and Ulf Norell - Chalmers University of Technology, Gothenburg, Sweden
+* Dependent Types at Work - Lecture Notes for the LerNet Summer School Piri ́apolis, Uruguay, February 2008 -
+  Ana Bove and Peter Dybjer
+  Chalmers University of Technology, G ̈oteborg, Sweden
+* Why Dependent Types Matter (Epigram) - Thorsten Altenkirch Conor McBride The University of Nottingham
+* Proofs and Types - Jean-Yves Girard
+* Programming in Martin-L ̈of’s Type Theory - An Introduction - Bengt Nordstr ̈om, Kent Petersson, Jan M. Smith
+
 ## Instructions for Installing Agda
 
 * Install Haskell
