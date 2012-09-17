@@ -29,6 +29,24 @@ header {
 	color: #D22;
 }
 
+.subtitle1 {
+	font-size: 70% !important;
+}
+
+.subtitle2 {
+	color: #66D;
+	font-size: 70% !important;
+}
+
+.subtitle3 {
+	color: #6D6;
+	font-size: 70% !important;
+}
+
+.subtitle3 a {
+	text-decoration: none;
+}
+
 section {
 	padding-top: 4em !important;
 }
@@ -116,4 +134,21 @@ img {
 	-webkit-box-shadow: 3px 3px 14px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    3px 3px 14px rgba(50, 50, 50, 0.75);
 	box-shadow:         3px 3px 14px rgba(50, 50, 50, 0.75);
+}
+
+.bigbottomimage {
+	height: 30%;
+	width: 93%;
+}
+
+.bigbottomimage img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#syntax2 .right {
+	width: 40%;
 }

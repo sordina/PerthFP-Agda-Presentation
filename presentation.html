@@ -35,7 +35,15 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <header>
-	<h1>Perth Functional Programmers <span class="subtitle">- Agda Presentation</span></h1>
+	<h1>
+		<span class="subtitle1">Perth Functional Programmers - </span>
+		<span class="subtitle"> Agda Presentation</span>
+		<span class="subtitle2"> - Lyndon Maydwell </span>
+		<span class="subtitle3">
+			- Code on
+			<a href="https://github.com/sordina/PerthFP-Agda-Presentation#perth-functional-programmers---agda-presentation">Github</a>
+		</span>
+	</h1>
 </header>
 
 <section class="slide">
@@ -244,9 +252,64 @@ Haskell's type-ceiling.
 </section>
 
 <section class="slide">
+	<h1>Syntax</h1>
+	<div class="bottom bigbottomimage">
+		<img src="resources/syntaxbg.png" alt="Syntax" />
+	</div>
+</section>
+
+<section class="slide" id="syntax2">
+	<div class="right">
+		<h3>Keywords</h3>
+		<ul>
+			<li><a href="http://wiki.portal.chalmers.se/agda/agda.php?n=ReferenceManual.Keywords">Agda Wiki</a></li>
+		</ul>
+		<h3>Tokens</h3>
+		<ul>
+			<li>Anything Else!</li>
+			<li>Numbers</li>
+			<li>Letters</li>
+			<li>Quotes</li>
+			<li>Non-Alphanumeric</li>
+			<li>Unicode!</li>
+		</ul>
+	</div>
+	<h2>Syntax</h2>
+	<h3>Delimiters</h3>
+	<ul>
+		<li>Whitespace - Tabs, Spaces</li>
+		<li>Parentheses - Grouping (No Surprises Here)</li>
+		<li>Underscores - Denote Placeholders (Mixfix)</li>
+	</ul>
+	<h3>Indentation</h3>
+	<ul>
+		<li>Specifies context</li>
+	</ul>
+</section>
+
+<section class="slide" id="syntax2">
+	<h2>Mixfix Notation</h2>
+	<div class="right">
+		<img src="resources/mixfix.png" />
+		<p>Mixfix allows very easy and flexible user defined syntax.</p>
+		<p>The ubiquitous  <code>if</code> statement
+		is just part of the Data.Bool library in Agda.</p>
+	</div>
+	<h3>In Types...</h3>
+	<h4>Underscores denote placeholders</h4>
+	<br />
+	<h3>In Values...</h3>
+	<h4>Underscores move arguments</h4>
+	<ul>
+		<li>From infix</li>
+		<li>To suffix</li>
+	</ul>
+</section>
+
+<section class="slide">
 	<h1>Never Mind the Bollocks...</h1>
 	<div class="bottom">
-		<h2 class="slide">Let's demonstrate some code live!</h2>
+		<h2 class="slide">Let's run through some live code!</h2>
 	</div>
 </section>
 

@@ -2,3 +2,4 @@
 *.agdai
 MAlonzo/
 \#*.agda#
+\#*.agdai#
