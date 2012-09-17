@@ -99,3 +99,8 @@ Maybe-Monad : Monad Maybe
 Maybe-Monad = record { return  = returnMaybe
                      ; _>>=_   = bindMaybe
                      }
+
+-- Using the Monad Instance Explicitly:
+
+maybe-monad-test : Maybe Bool
+maybe-monad-test = Monad.return Maybe-Monad True
