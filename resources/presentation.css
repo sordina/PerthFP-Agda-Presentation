@@ -70,13 +70,13 @@ section {
 }
 
 .nestedtypes {
+	font-family: 'Lobster', cursive !important;
 }
 
 .nestedtypes .spanbox {
 	display: inline-block;
 	padding: 0.7em 0.5em 0.5em 0.4em;
 	border: 2px solid black;
-	font-family: 'Lobster', cursive !important;
 	font-size: 115%;
 }
 
