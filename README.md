@@ -18,6 +18,7 @@ There are many resources available online for leaning Agda, unfortunately they a
 often extremely academic and found in the form of research-papers and workshop documents.
 Some of the best that I have come across so far are:
 
+* <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
 * Dependently Typed Programming in Agda - Ulf Norell - Chalmers University, Gothenburg
 * A Brief Overview of Agda – A Functional Language with Dependent Types -
   Ana Bove, Peter Dybjer, and Ulf Norell - Chalmers University of Technology, Gothenburg, Sweden
