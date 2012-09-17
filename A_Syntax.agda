@@ -12,6 +12,13 @@ module A_Syntax where
 open import Data.Nat
 open import Data.Bool
 
+-- Tokens must ALWAYS be separated by whitespace except when next to...
+--
+-- - Parentheses "()"
+-- - Underscores "_"
+--
+-- This includes Arithmatic operators "+-*/" etc.
+
 -- Data-definitions:
 
 data Foo : Set where

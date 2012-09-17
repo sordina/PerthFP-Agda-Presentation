@@ -60,6 +60,16 @@ data List (A : Set) : Set where
 -- head : List A → A
 -- 
 
+-- Therefore we must use the 'safe' variant of 'head' similar to Haskell's 'safe' package:
+
+data Maybe (A : Set) : Set where
+  Nothing :     Maybe A
+  Just    : A → Maybe A
+
+head-list : {A : Set} → List A → Maybe A
+head-list ε        = Nothing
+head-list (y ► y') = Just y
+
 tail : {A : Set} → List A → List A
 tail ε        = ε
 tail (y ► y') = y' -- '\t7' -- Remember: 'C-u C-x =' for hints on a character.
