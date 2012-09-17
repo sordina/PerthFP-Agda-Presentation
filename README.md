@@ -48,9 +48,11 @@ Make sure that
 
 returns a string.
 
-### Download Haskell-Mode (Requires Git)
+### Download Haskell-Mode
 
 Grab the latest haskell-mode from Github at https://github.com/haskell/haskell-mode
+
+You can download this with git, or just grab the archive from the downloads section.
 
 Unpack this somewhere stabe and note the location of the 'haskell-site-file' file.
 
