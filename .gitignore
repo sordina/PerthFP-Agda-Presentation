@@ -1,4 +1,4 @@
 *.agda~
 *.agdai
 MAlonzo/
-\#A_Syntax.agda#
+\#*.agda#
