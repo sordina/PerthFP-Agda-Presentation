@@ -7,7 +7,7 @@
 -- All Agda modules must declare the module name before any other definitions.
 -- The module name must match the file-name, minus the .agda suffix:
 
-module A_Basic_Types where
+module B_Basic_Types where
 
 -- The most basic Agda construct is the data definition.
 -- The form of a data-definition is:

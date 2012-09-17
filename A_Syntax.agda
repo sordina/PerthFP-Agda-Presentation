@@ -5,7 +5,7 @@
 
 -- Modules:
 
-module AA_Syntax where
+module A_Syntax where
 
 -- Imports:
 

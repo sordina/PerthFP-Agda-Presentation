@@ -4,7 +4,7 @@
 -- Source is available at https://github.com/sordina/PerthFP-Agda-Presentation
 
 
-module B_Inductive_Types where
+module C_Inductive_Types where
 
 -- We've seen parametized data-constuctors before with Maybe, however,
 -- we can make the constructor recursive easily to form an inductive type:
