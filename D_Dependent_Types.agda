@@ -20,7 +20,17 @@ head-list : {A : Set} → List A → Maybe A
 head-list  ε         = Nothing
 head-list  (y ► y')  = Just y
 
-data Vector : Set where
+open import Data.Nat
+
+data Vector (A : Set) : ℕ → Set where
+  ε   : Vector A 0
+  _►_ : {n : ℕ} → A → Vector A n → Vector A (n + 1)
+
+vmap : {A B : Set} → {n : ℕ} → (A → B) → Vector A n → Vector B n
+vmap f ε = ε
+vmap f (y ► y') = f y ► vmap f y'
+
+
 
 -- Taken from http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html:
 --

@@ -30,6 +30,7 @@ An overview of the drive behind Agda can be gleamed from:
 * <a href="http://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">Wikipedia - The Curry-Howard Isomorphism</a>
 * <a href="http://en.wikipedia.org/wiki/Intuitionistic_type_theory">Wikipedia - Martin-Löf Type Theory</a>
 * <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
+* <a href="https://github.com/liamoc/learn-you-an-agda">Learn you an Agda for Great Good (incomplete)</a>
 
 There are many resources available online for leaning Agda, unfortunately they are
 often extremely academic and found in the form of research-papers and workshop documents.

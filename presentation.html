@@ -40,43 +40,208 @@
 
 <section class="slide">
 	<h1>WELCOME</h1>
-	<ul class="bottom">
-		<li class="slide"> To ZOMBOCOM </li>
-		<li class="slide"> No... </li>
-		<li class="slide"> To the Perth Functional Programmer Agda Presentation </li>
+	<div class="bottom">
+		<ul class="slide bottom">
+			<li> To ZOMBOCOM
+			<li>No...  To the PerthFP <span class="subtitle"> - Agda Presentation</span> </li>
+			<li class="slide"> Presented by <em>Lyndon Maydwell</em> </li>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="slide">
+	<h1>Agda...</h1>
+</section>
+
+<section class="slide small">
+<div class="right small">
+<h3>Code:</h3>
+<pre><code>ack : (x y : ℕ) → ℕ
+ack 0       n       = s n
+ack (suc m) zero    = ack m (suc zero)
+ack (suc m) (suc n) = ack m (ack (suc m) n)
+</code></pre>
+<h3>Proof:</h3>
+<pre><code>∧-assoc₁ : { P Q R : Set } → ((P ∧ Q) ∧ R) → (P ∧ (Q ∧ R))
+∧-assoc₁ (∧-intro (∧-intro p q) r) = ∧-intro p (∧-intro q r)
+
+∧-assoc₂ : { P Q R : Set } → (P ∧ (Q ∧ R)) → ((P ∧ Q) ∧ R)
+∧-assoc₂ (∧-intro p (∧-intro q r)) = ∧-intro (∧-intro p q) r
+
+∧-assoc : { P Q R : Set } → ((P ∧ Q) ∧ R) ⇔  (P ∧ (Q ∧ R))
+∧-assoc = ∧-intro ∧-assoc₁ ∧-assoc₂
+</code>
+</pre>
+</div>
+	<h2>Agda...</h2>
+	<ul class="slide">
+		<li>Is a Programming Language</li>
+		<li>Is a Theorem Prover</li>
+		<li>Is both... At the same time!</li>
+	</ul>
+	<div class="slide">
+		<h3>Concequences:</h3>
+		<ul>
+			<li>Types are first-class values!</li>
+			<li>No partial functions!</li>
+			<li>No messy non-termination allowed!</li>
+		</ul>
+	</div>
+</section>
+
+<section class="slide">
+	<div class="right">
+		<img class="halfimg" src="resources/turing.png" />
+		<p class="attribution">Source: mathcomp.leeds.ac.uk</p>
+		<p class="attribution">http://www.mathcomp.leeds.ac.uk/turing2012/Images/Turing7.jpg</p>
+	</div>
+	<h2>But wait.......</h2>
+	<ul class="slide">
+		<li>"Guaranteed Termination"?</li>
+		<li>Wasn't there this <em>Turing</em> guy...</li>
+		<li>Something about "Stop Hammertime"?</li>
+	</ul>
+	<h3 class="slide">Buh?</h3>
+	<ul class="slide">
+		<li>We can have termination guarantees if...</li>
+		<li>We limit the language to not-allow general recursion.</li>
+		<li>Agda is <em>not</em> a general-purpose programming language!</li>
 	</ul>
 </section>
 
 <section class="slide">
+	<h1 >Leaving the Mechanics</h1>
+	<div class="bottom">
+		<h2 class="slide">Of that aside, for a moment...</h2>
+	</div>
+</section>
 
-	<pre class="right">supre!
-oelkasdflkj jlawefljk awefljk aewglj agwjkl
-wut wut wut wut wut wut wut wut 
-	</pre>
+<section class="slide">
+	<div class="right">
+		<img class="halfimg" src="resources/problem.png" />
+		<p class="attribution">Source: The Internet</p>
+	</div>
+	<h2>Types are first-class values</h2>
+	<h3 class="slide">Indeed they are my friends!</h3>
+	<p class="slide story">
+	Surely you know the pain of trying to manipulate <strong>types</strong> in Haskell...
+	There are some easy problems, but anything beyond the <strong>trivial</strong> slowly
+	descends into a <strong>lovecraftian</strong> nightmare realm inhabited by an altogether
+	different <strong>kind</strong> of being.
+	</p>
+	<p class="slide story"> A value has a <strong>type...</strong>  And a type has a <strong>kind...</strong> </p>
+	<p class="slide story"> But what is the type of a kind called???
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	<strong> &#8220; HORROR &#8221;</strong> </p>
+</section>
 
-	<div class="left">
-		<h2>Slide</h2>
-		<p>Here is a list of points:</p>
-		<p>lololol</p>
-		<ul>
-			<li class="slide">Point 1</li>
-			<li class="slide">Point 2</li>
-			<li class="slide">Point 3</li>
-		</ul>
+<section class="slide">
+	<h2>Not in Agda it isn't buddy!</h2>
+
+	<div class="right stock-small">
+		<img class="halfimg" src="resources/thumb.png" />
+		<img class="halfimg" src="resources/thumb2.png" />
+		<img class="halfimg" src="resources/thumb3.png" />
+		<p class="attribution">Source: Stolen Stock-Photography from Google Image-Search.</p>
 	</div>
 
+	<div>
+		<p> In Agda, it's <strike>turtles</strike> types all the way down.  </p>
+		<p> <img class="halfimg" src="resources/cards.png" /> </p>
+	</div>
 </section>
 
 <section class="slide">
-	<h1>Content</h1>
+	<h2>Agda's types just keep on truckin'</h2>
+<pre class="right">
+If you are familiar
+with the
+<strong>Zero-One-Infinity</strong>
+principal, this
+should make you feel
+more at-ease than
+Haskell's type-ceiling.
+</pre>
+	<h3 class="nestedtypes">
+		<span class="spanbox">
+			<span class="spanbox">
+				<span class="spanbox">
+					<span class="spanbox">
+						1
+					</span>
+					: Nat
+				</span>
+				: Set
+			</span>
+			: Set<sub>1</sub>
+		</span>
+		: Set<sub>2</sub> ...
+	</h3>
 </section>
 
 <section class="slide">
-	<h1>Here</h1>
+	<h1>Agda's IDE</h1>
+	<h2 class="bottom">Emacs <span class="small black"> &nbsp;&nbsp;&nbsp;
+			- &nbsp;&nbsp;&nbsp;
+			&#8220; Escape Meta Alt Control Shift &#8221; </span></h2>
+</section>
+
+<section class="slide">
+	<h2>Emacs</h2>
+	<h3> <em> &#8220; It's the only editor that has an Agda plugin written for it! &#8221; </em></h3>
+	<ul class="slide">
+		<li>It's not too bad once you get used to it</li>
+		<li>And the plugin is <em>REALLY GOOD</em></li>
+		<li>Many features that you will wish your Haskell editor had...</li>
+		<li>Once you're used to them</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<div class='right holes'>
+		<img src="resources/holes1.png" />
+		<p>&#8595; Load</p>
+		<img src="resources/holes2.png" />
+		<p>&#8595; Case-Split</p>
+		<img src="resources/holes3.png" />
+		<p>&#8595; Auto-Solve</p>
+		<img src="resources/holes4.png" />
+	</div>
+	<h2>Emacs</h2>
+	<h3> Holes </h3>
+	<ul class="slide">
+		<li>Often used where you would write <em>undefined</em> in Haskell</li>
+		<li>With many bonus features!</li>
+		<li>Navigation</li>
+		<li>Placeholder Description</li>
+		<li>Case Analysis</li>
+		<li>Solution Search :-)</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<div class='right navigation'>
+		<img src="resources/navigate1.png" />
+		<p>&#8595; M-.</p>
+		<img src="resources/navigate2.png" />
+		<p>&#8595; M-.</p>
+		<img src="resources/navigate3.png" />
+		<p>&#8595; M-*</p>
+		<img src="resources/navigate2.png" />
+	</div>
+	<h2>Emacs</h2>
+	<h3> Source Navigation </h3>
+	<ul class="slide">
+		<li>Navigate to Definition under Cursor</li>
+		<li>And Back Again...</li>
+		<li>To be fair, this is an emacs key-binding...</li>
+		<li>But this it is taking advantage of Agda's automatic tagging...</li>
+		<li>And tokenization</li>
+	</ul>
 </section>
 
 <!-- End slides. -->
-
 
 <!-- Begin extension snippets. Add or remove as needed. -->
 

@@ -1,5 +1,8 @@
 
 
+@import url(http://fonts.googleapis.com/css?family=Griffy);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 body {
 	background: url(noisy_grid.png) !important;
 	padding: 0 !important;
@@ -11,6 +14,7 @@ body {
 
 .right {
 	float: right;
+	clear: both;
 }
 
 header {
@@ -33,4 +37,83 @@ section {
 	position: absolute;
 	bottom: 0;
 	width: 200%;
+}
+
+.small {
+	font-size: 85% !important;
+}
+
+.halfimg {
+	max-height: 40%;
+}
+
+.attribution {
+	font-size: 60% !important;
+}
+
+.story {
+	width: 60%;
+	text-align: right;
+	font-style: italic !important;
+	text-shadow: 0 0 0.1em #111
+}
+
+.story strong {
+	font-size: 130%;
+	text-shadow: 0 0 0.4em #111;
+	font-family: 'Griffy', cursive !important;
+}
+
+.stock-small img {
+	height: 200px;
+	display: inline-block;
+}
+
+.nestedtypes {
+}
+
+.nestedtypes .spanbox {
+	display: inline-block;
+	padding: 0.7em 0.5em 0.5em 0.4em;
+	border: 2px solid black;
+	font-family: 'Lobster', cursive !important;
+	font-size: 115%;
+}
+
+.nestedtypes .spanbox { background: red; }
+.nestedtypes .spanbox .spanbox { background: green; }
+.nestedtypes .spanbox .spanbox .spanbox { background: blue; }
+.nestedtypes .spanbox .spanbox .spanbox .spanbox { background: yellow; }
+
+.black {
+	color: black;
+}
+
+.holes img {
+	width: 450px;
+	margin: 0;
+}
+
+.holes p {
+	font-size: 200%;
+	font-weight: bold;
+	padding: 0.2em;
+	margin: 0;
+}
+
+.navigation img {
+	margin: 0;
+}
+
+.navigation p {
+	font-size: 130%;
+	font-weight: bold;
+	padding: 0.2em;
+	margin: 0;
+}
+
+img {
+	-webkit-box-shadow: 3px 3px 14px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 14px rgba(50, 50, 50, 0.75);
+	box-shadow:         3px 3px 14px rgba(50, 50, 50, 0.75);
 }
