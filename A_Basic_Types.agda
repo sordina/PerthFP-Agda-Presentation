@@ -73,7 +73,18 @@ bindMaybe f (Just y) = f y
 returnMaybe : {A : Set} → A → Maybe A
 returnMaybe x = Just x
 
-record Monad (A : Set) : Set where
+-- This is all well and good, but if you are familiar with Haskell's type-classes
+-- then suffixing the type of the monadic functions for each type will
+-- seem like a dirty hack - And it is!
+
+-- Although agda doesn't have type-classes, it has records, and combined with
+-- implicit-parameters, these are strictly more powerful than type-classes
+-- as they can be used implicityly, but overridden without the use
+-- of ugly newtype wrappers :-)
+
+-- Here is the Monad Class from Haskell defined in Agda:
+
+record Monad (M : Set → Set) : Set₁ where
   field
-     return : A
-     _>>=_  : A
+    return : {A   : Set} → A → M A
+    _>>=_  : {A B : Set} → M A → (A → M B) → M B
