@@ -66,9 +66,9 @@ data Maybe (A : Set) : Set where
   Nothing :     Maybe A
   Just    : A → Maybe A
 
-bindMaybe : {A B : Set} → (A → Maybe B) → Maybe A → Maybe B
-bindMaybe f Nothing  = Nothing
-bindMaybe f (Just y) = f y
+bindMaybe : {A B : Set} → Maybe A → (A → Maybe B) → Maybe B
+bindMaybe Nothing  f = Nothing
+bindMaybe (Just y) f = f y
 
 returnMaybe : {A : Set} → A → Maybe A
 returnMaybe x = Just x
@@ -88,3 +88,14 @@ record Monad (M : Set → Set) : Set₁ where
   field
     return : {A   : Set} → A → M A
     _>>=_  : {A B : Set} → M A → (A → M B) → M B
+
+  -- We can define default implemetations inside the record, but outside the fields:
+  join : {A : Set} → M (M A) → M A
+  join x = x >>= id
+
+-- 'Class Instances' are defined as stand-alone values of the correct types
+
+Maybe-Monad : Monad Maybe
+Maybe-Monad = record { return  = returnMaybe
+                     ; _>>=_   = bindMaybe
+                     }
