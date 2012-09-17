@@ -18,9 +18,19 @@ header {
 	text-align: center;
 	color: white;
 	padding: 0.7em !important;
+	color: #DEDEDE;
+}
+
+.subtitle {
+	color: #D22;
 }
 
 section {
 	padding-top: 4em !important;
 }
 
+.bottom {
+	position: absolute;
+	bottom: 0;
+	width: 200%;
+}
