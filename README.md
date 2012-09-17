@@ -137,4 +137,4 @@ Hit `C-c C-l`
 
 If the file now has syntax-highlighting, then your setup is working!
 
-If not... Sorry :(
+If not... Sorry :-(
