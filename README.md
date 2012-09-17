@@ -21,7 +21,7 @@ Some of the best that I have come across so far are:
 * <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
 * <a href="http://www.cse.chalmers.se/~ulfn/darcs/AFP08/LectureNotes/AgdaIntro.pdf">Dependently Typed Programming in Agda</a>
 * <a href="http://www.cse.chalmers.se/~ulfn/papers/tphols09/tutorial.pdf">A Brief Overview of Agda – A Functional Language with Dependent Types</a>
-* <a href="http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf">Dependent Types at Work - Lecture Notes for the LerNet Summer School Piri ́apolis, Uruguay</a>
+* <a href="http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf">Dependent Types at Work</a>
 * <a href="http://www.cs.nott.ac.uk/~txa/talks/nijmegen-03.pdf">Why Dependent Types Matter (Epigram)</a>
 * <a href="http://www.paultaylor.eu/stable/prot.pdf">Proofs and Types</a>
 * <a href="http://www.cse.chalmers.se/research/group/logic/book/book.pdf">Programming in Martin-Löf's Type Theory</a>
