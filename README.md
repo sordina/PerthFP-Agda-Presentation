@@ -28,13 +28,13 @@ which can be read online for free.
 An overview of the drive behind Agda can be gleamed from:
 
 * <a href="http://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">Wikipedia - The Curry-Howard Isomorphism</a>
-* <a href="http://en.wikipedia.org/wiki/Intuitionistic_type_theory">Martin-Löf Type Theory</a>
+* <a href="http://en.wikipedia.org/wiki/Intuitionistic_type_theory">Wikipedia - Martin-Löf Type Theory</a>
+* <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
 
 There are many resources available online for leaning Agda, unfortunately they are
 often extremely academic and found in the form of research-papers and workshop documents.
 Some of the best that I have come across so far are:
 
-* <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
 * <a href="http://www.cse.chalmers.se/~ulfn/darcs/AFP08/LectureNotes/AgdaIntro.pdf">Dependently Typed Programming in Agda</a>
 * <a href="http://www.cse.chalmers.se/~ulfn/papers/tphols09/tutorial.pdf">A Brief Overview of Agda – A Functional Language with Dependent Types</a>
 * <a href="http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf">Dependent Types at Work</a>
@@ -95,7 +95,7 @@ Grab the latest haskell-mode from Github at https://github.com/haskell/haskell-m
 
 You can download this with git, or just grab the archive from the downloads section.
 
-Unpack this somewhere stabe and note the location of the 'haskell-site-file' file.
+Unpack this somewhere stable and note the location of the 'haskell-site-file' file.
 
 ### Configure Emacs
 
