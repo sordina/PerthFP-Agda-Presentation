@@ -127,7 +127,7 @@ Run:
 
     emacs test.agda
 
-This should load test.agda in emacs without ant errors.
+This should load test.agda in emacs without any errors.
 
 Enter the following code:
 
