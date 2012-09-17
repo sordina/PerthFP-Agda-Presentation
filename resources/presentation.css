@@ -1,0 +1,26 @@
+
+
+body {
+	background: url(noisy_grid.png) !important;
+	padding: 0 !important;
+}
+
+.whitebg {
+	background: white;
+}
+
+.right {
+	float: right;
+}
+
+header {
+	background: url(office.png);
+	text-align: center;
+	color: white;
+	padding: 0.7em !important;
+}
+
+section {
+	padding-top: 4em !important;
+}
+
