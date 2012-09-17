@@ -7,6 +7,11 @@
 
 module AA_Syntax where
 
+-- Imports:
+
+open import Data.Nat
+open import Data.Bool
+
 -- Data-definitions:
 
 data Foo : Set where
@@ -28,3 +33,19 @@ record Quux : Set where
 
   default : {A : Set} → Foo
   default = FooInhabitant1
+
+-- Unicode:
+
+γ : ℕ  -- \bn
+γ = 0  -- \gamma
+
+-- MixFix - Underscores denote placeholders:
+
+_+++_ : ℕ → ℕ → ℕ
+a +++ b = a + b
+
+-- Advanced Mixfix
+
+ifis_thenis_elseis_ : {A : Set} → Bool → A → A → A
+ifis true  thenis x elseis y = x
+ifis false thenis x elseis y = y
