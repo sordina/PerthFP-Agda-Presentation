@@ -17,7 +17,7 @@ open import Data.Bool
 -- - Parentheses "()"
 -- - Underscores "_"
 --
--- This includes Arithmatic operators "+-*/" etc.
+-- This includes Arithmatic operators "+-*/", Commas "," - etc.
 
 -- Data-definitions:
 
