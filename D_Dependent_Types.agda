@@ -30,7 +30,7 @@ data Vector : Set where
 
 record Π (α : Set) (β : α → Set) : Set where
   constructor Λ
-  field _$_ : ((x : α) → β x)
+  field _$_ : (x : α) → β x
 
 record Σ (α : Set) (β : α → Set) : Set where
   constructor _,_
@@ -39,9 +39,14 @@ record Σ (α : Set) (β : α → Set) : Set where
     snd : β fst
 
 -- A special case of Π: the function arrow.
+
 _~>_ : Set → Set → Set
 _~>_ α β = Π α (λ _ → β)
 
 -- A special case of Σ: the cartesian product.
 _×_ : Set → Set → Set
 _×_ α β = Σ α (λ _ → β)
+
+
+
+-- Future topics: Multiverse Theory (sort of)...
