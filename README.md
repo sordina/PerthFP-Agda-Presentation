@@ -48,7 +48,7 @@ Make sure that
 
 returns a string.
 
-### Download Haskell-Mode
+### Download Haskell-Mode (Requires Git)
 
 Grab the latest haskell-mode from Github at https://github.com/haskell/haskell-mode
 
