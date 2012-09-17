@@ -3,6 +3,17 @@ PerthFP-Agda-Presentation
 
 Source for my Agda Presentation to the <a href="http://www.meetup.com/PerthFP/">Perth Functional Programmers Group</a>
 
+## Recommended Reading
+
+Agda is an advanced dependently-typed programming-language / theorem-prover. In this
+tutorial I will attempt to make my examples self-contained, however, I will
+use many constructs found in Haskell as examples.
+
+As such, it is probably a good idea to have a play with some Haskell before
+attempting to do anything serious with Agda. A good resource for getting a
+feeling for Haskell is <a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a>
+which can be read online for free.
+
 ## Instructions for Installing Agda
 
 * Install Haskell
