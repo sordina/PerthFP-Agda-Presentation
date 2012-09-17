@@ -5,14 +5,15 @@ Source for my Agda Presentation to the <a href="http://www.meetup.com/PerthFP/">
 
 ## Overview
 
-* Overview
 * Philosophy
 * Syntax
 * Basic Types
 * Inductive Types
-* ---Break---
+* --- Break ---
 * Dependent Types
 * Theorems and Proofs
+* Conclusion
+* --- Questions ---
 
 ## Recommended Reading
 
