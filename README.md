@@ -1,18 +1,33 @@
-PerthFP-Agda-Presentation
+Perth Functional Programmers - Agda Presentation
 =========================
 
 Source for my Agda Presentation to the <a href="http://www.meetup.com/PerthFP/">Perth Functional Programmers Group</a>
+
+## Overview
+
+* Overview
+* Philosophy
+* Syntax
+* Basic Types
+* Inductive Types
+* ---Break---
+* Dependent Types
+* Theorems and Proofs
 
 ## Recommended Reading
 
 Agda is an advanced dependently-typed programming-language / theorem-prover. In this
 tutorial I will attempt to make my examples self-contained, however, I will
 use many constructs found in Haskell as examples.
-
 As such, it is probably a good idea to have a play with some Haskell before
 attempting to do anything serious with Agda. A good resource for getting a
 feeling for Haskell is <a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a>
 which can be read online for free.
+
+An overview of the drive behind Agda can be gleamed from:
+
+* <a href="http://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">Wikipedia - The Curry-Howard Isomorphism</a>
+* <a href="http://en.wikipedia.org/wiki/Intuitionistic_type_theory">Martin-Löf Type Theory</a>
 
 There are many resources available online for leaning Agda, unfortunately they are
 often extremely academic and found in the form of research-papers and workshop documents.
