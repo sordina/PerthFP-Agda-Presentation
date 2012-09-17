@@ -19,17 +19,12 @@ often extremely academic and found in the form of research-papers and workshop d
 Some of the best that I have come across so far are:
 
 * <a href="http://www.jonmsterling.com/posts/2012-09-07-pi-is-for-power-sigma-for-product.html">Pi is for Power, Sigma for Product</a>
-* <a href="http://www.cse.chalmers.se/~ulfn/darcs/AFP08/LectureNotes/AgdaIntro.pdf">Dependently Typed Programming in Agda - Ulf Norell - Chalmers University, Gothenburg</a>
-* <a href="http://www.cse.chalmers.se/~ulfn/papers/tphols09/tutorial.pdf">A Brief Overview of Agda – A Functional Language with Dependent Types -
-  Ana Bove, Peter Dybjer, and Ulf Norell - Chalmers University of Technology, Gothenburg, Sweden</a>
-* <a href="http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf">Dependent Types at Work - Lecture Notes for the LerNet Summer School Piri ́apolis, Uruguay, February 2008 -
-  Ana Bove and Peter Dybjer
-  Chalmers University of Technology, G ̈oteborg, Sweden</a>
-* <a href="http://www.cs.nott.ac.uk/~txa/talks/nijmegen-03.pdf">Why Dependent Types Matter (Epigram) - Thorsten Altenkirch Conor McBride
-  The University of Nottingham</a>
-* <a href="http://www.paultaylor.eu/stable/prot.pdf">Proofs and Types - Jean-Yves Girard</a>
-* <a href="http://www.cse.chalmers.se/research/group/logic/book/book.pdf">Programming in Martin-L ̈of’s Type Theory -
-  An Introduction - Bengt Nordstr ̈om, Kent Petersson, Jan M. Smith</a>
+* <a href="http://www.cse.chalmers.se/~ulfn/darcs/AFP08/LectureNotes/AgdaIntro.pdf">Dependently Typed Programming in Agda</a>
+* <a href="http://www.cse.chalmers.se/~ulfn/papers/tphols09/tutorial.pdf">A Brief Overview of Agda – A Functional Language with Dependent Types</a>
+* <a href="http://www.cse.chalmers.se/~peterd/papers/DependentTypesAtWork.pdf">Dependent Types at Work - Lecture Notes for the LerNet Summer School Piri ́apolis, Uruguay</a>
+* <a href="http://www.cs.nott.ac.uk/~txa/talks/nijmegen-03.pdf">Why Dependent Types Matter (Epigram)</a>
+* <a href="http://www.paultaylor.eu/stable/prot.pdf">Proofs and Types</a>
+* <a href="http://www.cse.chalmers.se/research/group/logic/book/book.pdf">Programming in Martin-Löf's Type Theory</a>
 
 Some of these papers are related to natural-deduction and dependent-types in general, but are still useful.
 
