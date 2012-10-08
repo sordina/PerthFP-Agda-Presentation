@@ -42,6 +42,8 @@ Some of the best that I have come across so far are:
 * <a href="http://www.cs.nott.ac.uk/~txa/talks/nijmegen-03.pdf">Why Dependent Types Matter (Epigram)</a>
 * <a href="http://www.paultaylor.eu/stable/prot.pdf">Proofs and Types</a>
 * <a href="http://www.cse.chalmers.se/research/group/logic/book/book.pdf">Programming in Martin-Löf's Type Theory</a>
+* <a href="https://entropia.de/wiki/images/c/cf/AgdaTalk.pdf">Dependent Types in Game Simulation (In German)</a>
+* <a href="http://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/fast+loose.pdf">Fast and Loose Reasoning is Morally Correct</a>
 
 Some of these papers are related to natural-deduction and dependent-types in general, but are still useful.
 

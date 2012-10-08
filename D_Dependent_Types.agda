@@ -58,5 +58,3 @@ _×_ : Set → Set → Set
 _×_ α β = Σ α (λ _ → β)
 
 
-
--- Future topics: Multiverse Theory (sort of)...
