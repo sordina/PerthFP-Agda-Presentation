@@ -46,10 +46,11 @@ record Quux : Set where
 γ : ℕ  -- \bn
 γ = 0  -- \gamma
 
+
 -- MixFix - Underscores denote placeholders:
 
 _+++_ : ℕ → ℕ → ℕ
-a +++ b = a + b
+_+++_ a b = a + b
 
 -- Advanced Mixfix
 

@@ -13,6 +13,7 @@ data Natural : Set where
   Zero : Natural
   Succ : Natural → Natural
 
+
 -- This allows us to use the 'Peano' number system:
 
 naught : Natural
@@ -50,7 +51,7 @@ one' = 1
 -- One final inductive data-type will be defined in this module - The List!
 
 data List (A : Set) : Set where
-  ε   : List A
+  ε   : List A 
   _►_ : A → List A → List A
 
 -- Note, we take full advantage of unicode and mixfix notation here.
@@ -69,6 +70,12 @@ data Maybe (A : Set) : Set where
 head-list : {A : Set} → List A → Maybe A
 head-list ε        = Nothing
 head-list (y ► y') = Just y
+
+
+hl : {A : Set} → List A → Maybe A
+hl ε = Nothing
+hl (x ► x') = Just x
+
 
 tail : {A : Set} → List A → List A
 tail ε        = ε

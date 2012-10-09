@@ -53,6 +53,23 @@ record Σ (α : Set) (β : α → Set) : Set where
 _~>_ : Set → Set → Set
 _~>_ α β = Π α (λ _ → β)
 
+open import Data.Bool
+
+supernot : Bool ~> Bool
+supernot  = Λ not
+
+
+_~~~_ : Bool → Set → Set
+_~~~_ a b = Π a (λ x → foo x)
+
+
+foo : Bool → Set
+foo True = Maybe Bool
+foo False = Nat
+
+
+-- normalnot : supernot
+
 -- A special case of Σ: the cartesian product.
 _×_ : Set → Set → Set
 _×_ α β = Σ α (λ _ → β)

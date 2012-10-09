@@ -37,7 +37,7 @@ data Bool : Set where
 -- C-c C-n : Evaluate expression
 
 not : Bool → Bool
-not True  = False
+not True = False
 not False = True
 
 -- Here are C-c C-d and C-c C-n used with not {Editor Aside - not, not True}
@@ -65,6 +65,9 @@ id x = x
 data Maybe (A : Set) : Set where
   Nothing :     Maybe A
   Just    : A → Maybe A
+
+trivial-theorem : Bool
+trivial-theorem = True
 
 bindMaybe : {A B : Set} → Maybe A → (A → Maybe B) → Maybe B
 bindMaybe Nothing  f = Nothing

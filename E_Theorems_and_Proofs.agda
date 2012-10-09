@@ -13,6 +13,11 @@ data _⨂_ (A : Set) (B : Set) : Set where
   _,_ : A → B → A ⨂ B
   -- ⨂ - \Ox
 
+open import Data.Bool
+
+foo  : Bool ⨂ Bool
+foo = false , true
+
 
 
 -- Have you brushed up on your natural deduction?
@@ -23,9 +28,9 @@ left-elimination : ∀ { A B } → A ⨂ B → A -- Underscore is special sauce 
 
 -- Proof:
 
-left-elimination (x , x₁) = x
+left-elimination (x , y) = x
 
--- The 'Proofs' chaper from Learn you an Agda serves as a good introduction
+-- The 'Proofs' chapter from Learn you an Agda serves as a good introduction
 -- to this style of proof.
 
 
@@ -56,7 +61,9 @@ vconcat ε y = y
 vconcat (y ► ys) xs = y ►  (vconcat ys xs)
 
 -- Obviously vrev is just - 
--- vrev (y ► ys) = vconcat (vrev ys) (y ► ε)
+--vrev2 : {A : Set} → {n : ℕ} → Vec A n → Vec A n
+--vrev2 ε = ε
+--vrev2 (y ► ys) = vconcat (vrev2 ys) (y ► ε)
 
 -- ... Except it isn't :-(
 
