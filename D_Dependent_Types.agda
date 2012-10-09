@@ -56,5 +56,3 @@ _~>_ α β = Π α (λ _ → β)
 -- A special case of Σ: the cartesian product.
 _×_ : Set → Set → Set
 _×_ α β = Σ α (λ _ → β)
-
-
