@@ -28,6 +28,12 @@
 	
 	<!-- Required Modernizr file -->
 	<script src="presentation/modernizr.custom.js"></script>
+	<script src="presentation/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function(){
+			$('section').click(function(){ $.deck('next') })
+		})
+	</script>
 </head>
 
 <body class="deck-container">
@@ -50,9 +56,9 @@
 	<h1>WELCOME</h1>
 	<div class="bottom">
 		<ul class="slide bottom">
-			<li> To ZOMBOCOM
-			<li>No...  To the PerthFP <span class="subtitle"> - Agda Presentation</span> </li>
-			<li class="slide"> Presented by <em>Lyndon Maydwell</em> </li>
+			<li class="slide">To ZOMBOCOM
+			<li class="slide">No...  To the PerthFP <span class="subtitle"> - Agda Presentation</span> </li>
+			<li class="slide">Presented by <em>Lyndon Maydwell</em> </li>
 			</li>
 		</ul>
 	</div>
@@ -344,7 +350,6 @@ Haskell's type-ceiling.
 
 
 <!-- Required JS files. -->
-<script src="presentation/jquery-1.7.2.min.js"></script>
 <script src="presentation/core/deck.core.js"></script>
 
 <!-- Extension JS files. Add or remove as needed. -->
