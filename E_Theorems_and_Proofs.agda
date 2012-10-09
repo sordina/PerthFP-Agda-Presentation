@@ -25,6 +25,9 @@ left-elimination : ∀ { A B } → A ⨂ B → A -- Underscore is special sauce 
 
 left-elimination (x , x₁) = x
 
+-- The 'Proofs' chaper from Learn you an Agda serves as a good introduction
+-- to this style of proof.
+
 
 -- One thing you will often find when writing proofs in Agda is that
 -- the 'shape' of your proof will nearly always match the shape of
