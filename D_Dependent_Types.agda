@@ -55,18 +55,13 @@ _~>_ α β = Π α (λ _ → β)
 
 open import Data.Bool
 
-supernot : Bool ~> Bool
-supernot  = Λ not
-
-
-_~~~_ : Bool → Set → Set
-_~~~_ a b = Π a (λ x → foo x)
-
-
 foo : Bool → Set
-foo True = Maybe Bool
-foo False = Nat
+foo true  = Bool
+foo false = ℕ
 
+specialthing : Π Bool foo
+specialthing true  = false
+specialthing false = 12
 
 -- normalnot : supernot
 
